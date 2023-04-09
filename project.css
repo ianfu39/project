@@ -1,0 +1,321 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFF8DC;
+    display: block;
+}
+header{
+    background-color:	#DEB887;
+    margin: 0px;
+    padding: 30px 50px 20px 50px;
+    
+}
+.start{
+    float: left;  
+    font-size: 60px;
+    color: 	#B87333;
+    font-family: 'Alex Brush', cursive;
+    font-weight: bold;
+    animation: blink .75s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+li{
+    padding-top: 15px;
+    list-style-type: none;
+    font-size: 20px;
+    float: left;
+    width: 300px;
+    text-align: center;
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.socialmedia{
+    margin-top: 25px;
+    padding-left: 85%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    
+}
+a:hover {
+    background-color:	#D2B48C;
+    color:#FFDAB9;
+}
+
+main{
+    padding: 25px;
+}
+
+.resume{
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-bottom: 25px;
+    padding: 0px;
+    border-radius: 100px;
+    background-color: #FFE4B5;
+    width: 70%;
+    height: 500px;
+    
+}
+.intro{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: bold;
+    color: white;
+}
+.image-container {
+    position: relative;
+  }
+  
+  .image1, .image2 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image1 {
+    background-image: url('image1.jpg');
+  }
+  
+  .image2 {
+    background-image: url('image2.jpg');
+    opacity: 0;
+  }
+  
+  .image-container:hover .image1 {
+    opacity: 0;
+  }
+  
+  .image-container:hover .image2 {
+    opacity: 1;
+  }
+img{
+    transform:scale(1,1);transition: all 1s ease-out;
+}
+img:hover{
+    transform:scale(1.2,1.2);
+}
+.text{
+    margin-top: 30px;
+    margin-right: 0px;
+    float: right;
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+    color: white;
+    letter-spacing: .15em;
+}
+p{
+    overflow: hidden; /* 隐藏文本溢出部分 */
+    border-right: .15em solid orange; /* 添加闪烁光标效果 */
+    white-space: nowrap; /* 防止文本折行 */
+    animation: typing 4s steps(20, end), blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* 光标闪烁动画 */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+.experience{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: bold;
+    color: #996B1F;
+}
+
+.myexp {
+    margin-left: 13%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+    
+}
+.card {  
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: #996B1F;
+}
+.schoolpic{
+    border-radius: 50%;
+}
+.schoolcontent{
+    width: 400px;
+    height: 400px;
+    background-color:	#FFEBCD	;
+    font-weight: bold;
+    border-radius: 10%;
+    font-size: 22px;
+    letter-spacing: 1.2px;
+    font-family: 微軟正黑體;
+    word-wrap: break-word;
+}
+.array_item{
+    width: 100%;
+}
+
+#file{
+    width: 50%;
+    height: 50px;
+    animation-iteration-count:infinite;
+    font-size: 20px;
+    color: black;
+}
+
+#file02{
+    width: 50%;
+    height: 50px;
+    animation-iteration-count:infinite;
+    font-size: 20px;
+    color: black;
+}
+
+#schedule{
+    width: 50%;
+    text-align: center;
+}
+#schedule02{
+    width: 50%;
+    text-align: center;
+}
+progress{
+    accent-color: #FFE4C4;
+}
+
+.skillcontent{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight: bold;
+    color: white;
+}
+.skills{
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    border-radius: 50px;
+    background-color: #FFE4B5;
+    width: 200%;
+    height: 100%;
+    text-align: center;
+   
+}
+.skill {
+    width: 95%;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.progress {
+    margin-top: 30px;
+    width: 60%;
+    height: 100%;
+    background-color:#CCB38C;
+    border-radius: 10px;
+    animation: test 1s;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+.progress2 {
+    margin-top: 50px;
+    width: 80%;
+    height: 100%;
+    background-color:#CCB38C;
+    border-radius: 10px;
+    animation: test 1s;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+   
+}
+.progress3 {
+    margin-top: 50px;
+    width: 70%;
+    height: 100%;
+    background-color:#CCB38C;
+    border-radius: 10px;
+    animation: test 1s;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+.progress4 {
+    margin-top: 50px;
+    width: 50%;
+    height: 100%;
+    background-color:#CCB38C;
+    border-radius: 10px;
+    animation: test 1s;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+.program{
+    float: left;
+    margin-left: 25px;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+}
+@keyframes test {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+.school{
+        text-align: center;
+        font-size: 40px;
+        padding: 20px;
+        font-family: 'Delicious Handrawn', cursive;
+        font-weight: bold;
+        background-color:	#D2B48C;
+        border-radius: 10%;
+    
+}
+.test{
+   font-size: 24px;
+   letter-spacing: 2px;
+   color: white;
+}
+.schoolpic{
+    border-radius: 15%;
+}
+
+footer {
+    background-color:#DEB887;
+    color: #444444;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 5%;
+}
